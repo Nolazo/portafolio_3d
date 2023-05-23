@@ -19,6 +19,15 @@
   display: block;
 }
 
+.hero-img{
+  background-color: #00cea8;
+  margin-top: -550px;
+  z-index: 99;
+}
+.hero-img img{
+  object-fit: cover;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(

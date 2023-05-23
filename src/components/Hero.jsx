@@ -1,13 +1,18 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ComputersCanvas } from './canvas'
+import { heroImg } from "../assets/";
 
 import { styles } from '../styles'
 
 const Hero = () => {
 	return (
 		<>
+			<div className='hero-img'>
+				<img src={heroImg} alt={heroImg}/>
+			</div>
 			<section className='relative w-full h-screen mx-auto'>
+
 				<div className={`${styles.paddingX} absolute inset-0
 					top-[120px] max-w-7xl mx-auto
 					flex flex-row items-start gap-5`}
@@ -21,15 +26,15 @@ const Hero = () => {
 						<h1 className={`${styles.heroHeadText} text-white`}>
 							Hi, Im <span>n0lo</span>
 						</h1>
-						<p className={`${styles.heroSubText} mt-2
+						<h2 className={`${styles.heroSubText} mt-2
 							text-white-100`}>
-							I develop crazy stuff <br className='sm:block hidden'/>
-							interfaves, webapp, pwa
-						</p>
+							I build things for the web <br className='sm:block hidden'/>
+						</h2>
 					</div>
 				</div>
+
 				
-				<ComputersCanvas/>
+				{/* <ComputersCanvas/> */}
 
 				{/* Botoncito de scroll */}
 				<div className="absolute xs:bottom-10 bottom-32 
