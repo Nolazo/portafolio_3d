@@ -8,11 +8,7 @@ import { styles } from '../styles'
 const Hero = () => {
 	return (
 		<>
-			<div className='hero-img'>
-				<img src={heroImg} alt={heroImg}/>
-			</div>
 			<section className='relative w-full h-screen mx-auto'>
-
 				<div className={`${styles.paddingX} absolute inset-0
 					top-[120px] max-w-7xl mx-auto
 					flex flex-row items-start gap-5`}
@@ -32,13 +28,10 @@ const Hero = () => {
 						</h2>
 					</div>
 				</div>
-
-				
 				{/* <ComputersCanvas/> */}
-
-				{/* Botoncito de scroll */}
+										{/* Botoncito de scroll */}
 				<div className="absolute xs:bottom-10 bottom-32 
-					w-full flex justify-center items-center">
+					w-full flex justify-center items-center left-[600]">
 					<a href="#about">
 						<div className="w-[35] h-[64px] rounded-3x1 border-4
 							border-secondary rounded-full flex justify-center items-start p-2">
@@ -56,8 +49,11 @@ const Hero = () => {
 						</div>
 					</a>
 				</div>
-			</section>
 
+				<div className='hero-img'>
+					<img src={heroImg} alt={heroImg}/>
+				</div>
+			</section>
 		</>
 
 	)
