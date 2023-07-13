@@ -2,13 +2,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { ComputersCanvas } from './canvas'
 import { heroImg } from "../assets/";
-
 import { styles } from '../styles'
+import HeroBackground from './HeroBackground';
 
 const Hero = () => {
 	return (
 		<>
 			<section className='relative w-full h-screen mx-auto'>
+				<HeroBackground/>
 				<div className={`${styles.paddingX} absolute inset-0
 					top-[120px] max-w-7xl mx-auto
 					flex flex-row items-start gap-5`}
@@ -29,7 +30,7 @@ const Hero = () => {
 					</div>
 				</div>
 				{/* <ComputersCanvas/> */}
-										{/* Botoncito de scroll */}
+				{/* Botoncito de scroll */}
 				<div className="absolute xs:bottom-10 bottom-32 
 					w-full flex justify-center items-center left-[600] z-[30]">
 					<a href="#about">
@@ -50,8 +51,8 @@ const Hero = () => {
 					</a>
 				</div>
 
-				<div className='hero-img'>
-					<img src={heroImg} alt={heroImg}/>
+				<div className='flex justify-end w-full h-full m-0 z-0 absolute'>
+					<img src={heroImg} alt='heroImg'/>
 				</div>
 			</section>
 		</>
